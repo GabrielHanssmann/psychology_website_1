@@ -189,6 +189,10 @@ header ul li .activa{
     animation: fondo 20s ease-in-out infinite;
 }
 
+.banner.mensj{
+    background: #E5383B;
+}
+
 .banner h2{
     margin-bottom: 15px;
     font-size: 50px;
@@ -568,23 +572,26 @@ header ul li .activa{
     transform: translateY(-20px);
     color: #F5F3F4;
 }
-.formulario .intputBox input[type="submit"]{
-    position: relative;
-    width: 50%;
-    background:  #E5383B;
-    display: inline-block;
-    color: #ffffff;
-    margin-top: 10px;
-    padding: 10px 30px;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    border-bottom: none;
-    cursor: pointer;
-    transition: 0.5s;
+/*.formulario .intputBox input[type="submit"],*/
+button {
+    position: relative !important;
+    width: 50% !important;
+    background:  #E5383B !important;
+    display: inline-block !important;
+    color: #ffffff !important;
+    margin-top: 10px !important;
+    padding: 10px 30px !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    border: none !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    border-bottom: none !important;
+    cursor: pointer !important;
+    transition: 0.5s !important;
 }
-.formulario .intputBox input[type="submit"]:hover{
+/*.formulario .intputBox input[type="submit"]:hover,*/
+button:hover{
     background: #F5F3F4;
     color: #A4161A;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -689,6 +696,7 @@ footer .footer-abajo{
     font-weight: 700;
 }
 
+
 @media screen and (min-width: 600px){
     .footer-izq {
         flex: 1 0px;
@@ -705,7 +713,11 @@ footer .footer-abajo{
 
 @media (max-width: 991px){
     section{
-        padding: 50px 10px;
+        padding: 15px 10px;
+    }
+
+    .heading{
+        margin-bottom: 5px;
     }
 
     .heading h2{
@@ -778,7 +790,8 @@ footer .footer-abajo{
     }
 
     .slider{
-        margin-top: 60px;
+        margin-top: 0px;
+        min-height: 100vh;
     }
     .slider .imgBx {
         padding: 20px;
@@ -792,6 +805,10 @@ footer .footer-abajo{
         margin-top: 60px;
         
         padding: 0;
+    }
+
+    .banner h2{
+        font-size: 32px;
     }
 
     .banner .textBx{
@@ -829,6 +846,10 @@ footer .footer-abajo{
         padding: 0;
     }
 
+    .testimonial{
+        padding: 35px 0px;
+    }
+
     .contacto .contenedor {
         width: 100%;
         display: flex;
@@ -839,6 +860,7 @@ footer .footer-abajo{
     }
 
     .contacto .contenedor .info-contacto {
+        width: 85%;
         padding-left: 0;
     }
 
@@ -856,7 +878,8 @@ footer .footer-abajo{
 }
 
 @media (max-width: 527px){
-    .formulario .intputBox input[type="submit"] {
+    .formulario .intputBox input[type="submit"],
+    button{
         width: 50%;
     }
 }
