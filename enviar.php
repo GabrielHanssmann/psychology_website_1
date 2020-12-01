@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
 // Datos para el correo
-$destinatario = "info@klickmd.com";
+$destinatario = "info@geistpsicologia.com";
 $asunto = "Contacto desde la web";
 
 $carta = "Nombre: $nombre \n";
