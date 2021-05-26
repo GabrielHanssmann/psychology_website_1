@@ -7,6 +7,7 @@ function toggleMenu(){
 }
 
 
+
 // SLIDER
 
 var contador = 1;
