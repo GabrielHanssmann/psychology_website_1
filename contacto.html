@@ -68,110 +68,116 @@
     </section>
 
 
-        <section class="contacto">
-            <div class="contenedor">
-                <div class="info-contacto">
-                    <div class="box-contact">
-                        <div class="icono-contact">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </div> 
-                        <div class="texto-contact"> 
-                            <h3>Whatsapp</h3> <p>+598 92 790 919</p>
-                        </div> 
-                    </div> 
-                    <div class="box-contact"> 
-                        <div class="icono-contact">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </div>
-                    <div class="texto-contact">
-                        <h3>Mail</h3>
-                        <p>info@geistpsicologia.com</p>
-                    </div>
-                </div>
+    <section class="contacto">
+        <div class="heading">
+            <h2>Consulta con nuestros psicólogos</h2>
+            <p>Si quieres comenzar tu tratamiento, solicitar una entrevista o aclarar alguna duda, estaremos encantados de atenderte. <br>
+            Desde Geist te ofrecemos la máxima seriedad, implicación y confidencialidad.</p>
+        </div>
+        <div class="contenedor">
+            <div class="info-contacto">
                 <div class="box-contact">
-                    <div class="icono-contact"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                    <div class="texto-contact">
-                        <h3>Horario</h3>
-                        <p>Lunes a Viernes
-                            <br>09:00 a 20:00
-                        </p>
+                    <div class="icono-contact">
+                        <a href="tel:+59892790919"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        
+                    </div> 
+                    <div class="texto-contact"> 
+                        <h3>Whatsapp</h3> <a href=""></a><p>+598 92 790 919</p>
+                    </div> 
+                </div> 
+                <div class="box-contact"> 
+                    <div class="icono-contact">
+                        <a href="mailto:info@geistpsicologia.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                     </div>
+                <div class="texto-contact">
+                    <h3>Mail</h3>
+                    <p>info@geistpsicologia.com</p>
                 </div>
             </div>
-                <div class="formulario">
-                    <form action="enviar.php" method="POST" id="demo-form">
-                        <h2>Enviar Mensaje</h2>
-                        <div class="intputBox">
-                            <input type="text" name="nombre" required="Completar este campo">
-                            <span>Nombre</span>
-                        </div>
-                        <div class="intputBox">
-                            <input type="text" name="apellido" required="Completar este campo">
-                            <span>Apellido</span>
-                        </div>
-                        <div class="intputBox">
-                            <input type="email" name="email" required="Completar este campo">
-                            <span>Mail de Contacto</span>
-                        </div>
-                        <div class="intputBox">
-                            <input type="tel" name="telefono" required="Completar este campo">
-                            <span>Número de Celular</span>
-                        </div>
-                        <div class="intputBox">
-                            <textarea name="mensaje" required="Completar Mesnaje"></textarea>
-                            <span>Escribir Mensaje</span>
-                        </div>
-                        <div class="intputBox">
-                                <button class="g-recaptcha" 
-                                    data-sitekey="6LexeOYZAAAAAJfmaJ9N_uelfYazf0p66CMeZSF1" 
-                                    data-callback='onSubmit' 
-                                    data-action='submit'>Enviar</button>    
-                        </div>
-                    </form>
+            <div class="box-contact">
+                <div class="icono-contact"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                <div class="texto-contact">
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes
+                        <br>09:00 a 20:00
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <footer>
-            <div class="footer-izq">
-                <!--PONER IMAGEN LOGO-->
-                <div class="logo-footer">Geist</div>
-                <p>Si estás buscando ayuda psicológica en Uruguay, te damos la bienvenida a Geist Psicología.
-                    Un centro de psicología con años de experiencia y en constante formación e investigación.
-                    Especializados en tratar la salud emocional de las personas y mejorar su calidad de vida.</p>
+        </div>
+            <div class="formulario">
+                <form action="enviar.php" method="POST" id="demo-form">
+                    <h2>Enviar Mensaje</h2>
+                    <div class="intputBox">
+                        <input type="text" name="nombre" required="Completar este campo">
+                        <span>Nombre</span>
+                    </div>
+                    <div class="intputBox">
+                        <input type="text" name="apellido" required="Completar este campo">
+                        <span>Apellido</span>
+                    </div>
+                    <div class="intputBox">
+                        <input type="email" name="email" required="Completar este campo">
+                        <span>Mail de Contacto</span>
+                    </div>
+                    <div class="intputBox">
+                        <input type="tel" name="telefono" required="Completar este campo">
+                        <span>Número de Celular</span>
+                    </div>
+                    <div class="intputBox">
+                        <textarea name="mensaje" required="Completar Mesnaje"></textarea>
+                        <span>Escribir Mensaje</span>
+                    </div>
+                    <div class="intputBox">
+                            <button class="g-recaptcha" 
+                                data-sitekey="6LexeOYZAAAAAJfmaJ9N_uelfYazf0p66CMeZSF1" 
+                                data-callback='onSubmit' 
+                                data-action='submit'>Enviar</button>    
+                    </div>
+                </form>
             </div>
-            <ul class="footer-der">
-                <li>
-                    <h3>Institucional</h3>
-                    <ul class="caja-enlace">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="trabajo.html">Como Trabajamos</a></li>
-                    </ul>
-                </li>
-                <li class="terapia-box">
-                    <h3>Terapias</h3>
-                    <ul class="caja-enlace">
-                        <li><a href="adultos.html">Adultos</a></li>
-                        <li><a href="adolescentes.html">Adolescentes</a></li>
-                        <li><a href="online.html">Online</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Contacto</h3>
-                    <ul class="caja-enlace">
-                        <li><b>Whatsapp:</b> +598 92 790 919</li>
-                        <li><b>Mail:</b> info@geistpsicologia.com</li>
-                        <li><b>Horario:</b> Lun a Vie 09:00 a 20:00</li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="footer-abajo">
-                <p>Todos los derechos reservados a Geist &copy; Psicología 2021</p>
-                <p class="klick">Sitio Web desarrollado por 
-                    <a target="_blank" href="https://klickmd.com/"><span class="log1">&lt;KLICK&gt;</span></a></p>
-            </div>
-        </footer>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-izq">
+            <!--PONER IMAGEN LOGO-->
+            <div class="logo-footer"><a href="https://geistpsicologia.com/">Geist</a></div>
+            <p>Si estás buscando ayuda psicológica en Uruguay, te damos la bienvenida a Geist Psicología.
+                Un centro de psicología con años de experiencia y en constante formación e investigación.
+                Especializados en tratar la salud emocional de las personas y mejorar su calidad de vida.</p>
+        </div>
+        <ul class="footer-der">
+            <li>
+                <h3>Institucional</h3>
+                <ul class="caja-enlace">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="trabajo.html">Como Trabajamos</a></li>
+                </ul>
+            </li>
+            <li class="terapia-box">
+                <h3>Terapias</h3>
+                <ul class="caja-enlace">
+                    <li><a href="adultos.html">Adultos</a></li>
+                    <li><a href="adolescentes.html">Adolescentes</a></li>
+                    <li><a href="online.html">Online</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Contacto</h3>
+                <ul class="caja-enlace">
+                    <li><b>Whatsapp:</b> <a href="tel:+59892790919">+598 92 790 919</a></li>
+                    <li><b>Mail:</b> <a href="mailto:info@geistpsicologia.com">info@geistpsicologia.com</a> </li>
+                    <li><b>Horario:</b> Lun a Vie 09:00 a 20:00</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-abajo">
+            <p>Todos los derechos reservados a Geist &copy; Psicología 2021</p>
+            <p class="klick">Sitio Web desarrollado por 
+                <a target="_blank" href="https://klickmd.com/"><span class="log1">&lt;KLICK&gt;</span></a></p>
+        </div>
+    </footer>
 
    
         

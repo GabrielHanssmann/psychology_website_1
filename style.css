@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
+:root {
+    --fondo-seccion: #e9e9e9;
+    --fondo-banner: #88bbd6;
+    --color-logo: #013552;
+    --color-fuente: #212427;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +20,11 @@
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+   
 }
 h3{
     font-family: 'Roboto', sans-serif;
+    
 }
 
 section{
@@ -39,7 +48,7 @@ header{
 
 header .logo{
     font-family: 'Oswald', sans-serif;
-    color: #A4161A ;
+    color: var(--color-logo) ;
     font-size: 32px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -49,7 +58,7 @@ header .logo{
 
 
 header .logo:hover{
-    color: #E5383B;
+    color: var(--fondo-banner);
 }
 
 header ul{
@@ -91,9 +100,10 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: #A4161A;
+    background: var(--color-logo);
     color: #ffffff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 header ul li .activa{
     color:#E5383B;
@@ -107,7 +117,7 @@ header ul li .activa{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: #A4161A;
+    background: var(--fondo-banner);
 }
 
 .slider .imgBx{
@@ -167,7 +177,7 @@ header ul li .activa{
 }
 
 .slider .btn{
-    background: #660708
+    background: var(--color-logo)
     ;
 }
 
@@ -177,7 +187,7 @@ header ul li .activa{
     min-height: 50vh;
     margin-top: 80px;
     padding: 0 20%;
-    background: #A4161A;
+    background: #88bbd6;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -215,7 +225,7 @@ header ul li .activa{
 
 .btn{
     position: relative;
-    background:  #A4161A;
+    background:  var(--color-logo);
     display: inline-block;
     color: #ffffff;
     margin-top: 20px;
@@ -229,7 +239,7 @@ header ul li .activa{
 
 .btn:hover{
     background: #F5F3F4;
-    color: #A4161A;
+    color: var(--color-logo);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -274,24 +284,26 @@ header ul li .activa{
 }
 
 .nosotros .content .nosotrosBX:hover{
-    box-shadow: 5px 10px 20px 10px #a4161b75;
+    box-shadow: 5px 10px 20px 10px var(--fondo-banner);
 }
 
-
+.testimonios{
+    background: var(--fondo-seccion);
+}
 
 .nosotros .content .nosotrosBX h2{
     padding: 50px;
-    background: #A4161A;
+    background: var(--color-logo);
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 25px;
     z-index: 1;
     transition: 0.7s;
-    box-shadow: 0 0 0 0 #A4161A;
+    box-shadow: 0 0 0 0 var(--color-logo);
 }
 .nosotros .content .nosotrosBX:hover h2{
-    box-shadow: 0 0 0 400px #A4161A;
+    box-shadow: 0 0 0 400px var(--color-logo);
     background: #ffffff;
     color:black;
 }
@@ -338,10 +350,16 @@ header ul li .activa{
 
 .terapias .content .imgPhoto{
     max-width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.terapias .content .imgPhoto:hover{
+    padding: 15px;
+    opacity: 0.5;
 }
 
 .metodo{
-        background: #F5F3F4;
+        background: var(--fondo-seccion);
 }
 
 .metodo .content{
@@ -367,8 +385,8 @@ header ul li .activa{
     position: relative;
     width: 80px;
     height: 80px;
-    background: #A4161A;
-    box-shadow: 0 0 0 0 #A4161A;
+    background: var(--color-logo);
+    box-shadow: 0 0 0 0 var(--color-logo);
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -379,7 +397,7 @@ header ul li .activa{
 }
 
 .metodo .content .nosotrosBX:hover .icon{
-    box-shadow: 0 0 0 600px #A4161A;
+    box-shadow: 0 0 0 600px var(--color-logo);
  
 }
 
@@ -427,7 +445,7 @@ header ul li .activa{
     padding: 35px 50px;
     margin: 0 20px 30px;
     border-radius: 0 70px 0 70px;
-    border: 5px solid #A4161A;
+    border: 5px solid var(--fondo-banner);
     border-left: none;
     border-right: none;
     text-align: center;
@@ -472,7 +490,7 @@ header ul li .activa{
     opacity: 0.8;
     transition: all 0.3s ease 0s;
 }
-.owl-theme .owl-controls .owl-page.active span{ background: #A4161A; }
+.owl-theme .owl-controls .owl-page.active span{ background: var(--color-logo); }
 
 
 
@@ -512,7 +530,7 @@ header ul li .activa{
     min-width: 60px;
     height: 60px;
     margin-right: 10px;
-    background: #A4161A;
+    background: var(--color-logo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,6 +540,11 @@ header ul li .activa{
 .contacto .contenedor .info-contacto .box-contact .icono-contact i{
     filter: invert(1);
 }
+.contacto .contenedor .info-contacto .box-contact .icono-contact a{
+    text-decoration: none;
+    color: black;
+}
+
 .contacto .contenedor .info-contacto .box-contact .texto-contact{
     display: flex;
     flex-direction: column;
@@ -530,7 +553,7 @@ header ul li .activa{
 .formulario{
     width: 50%;
     padding: 40px;
-    background:  #A4161A;
+    background:  var(--fondo-banner);
     color: #ffffff;
 }
 
@@ -544,24 +567,26 @@ header ul li .activa{
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
-    color: #ffffff;
+    color: #212427;
     margin: 10px 0;
     border: none;
-    background: transparent;
-    border-bottom: 1px solid #ffffff;
+    background: white;
+    /* border-bottom: 1px solid #ffffff; */
+    border-radius: 5px;
     outline: none;
     resize: none;
 }
 
 .formulario .intputBox span{
     position: absolute;
-    left: 0;
+    left: 10px;
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
     font-weight: 600;
+    color: #212427;
 }
 
 .formulario .intputBox input:focus ~ span,
@@ -576,7 +601,7 @@ header ul li .activa{
 button {
     position: relative !important;
     width: 50% !important;
-    background:  #E5383B !important;
+    background:  var(--color-logo) !important;
     display: inline-block !important;
     color: #ffffff !important;
     margin-top: 10px !important;
@@ -593,7 +618,7 @@ button {
 /*.formulario .intputBox input[type="submit"]:hover,*/
 button:hover{
     background: #F5F3F4;
-    color: #A4161A;
+    color: var(--color-logo);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -605,7 +630,7 @@ footer{
     display: flex;
     flex-flow: row wrap;
     padding: 50px 50px 10px;
-    background: #A4161A;
+    background: var(--fondo-banner);
     color: #ffffff;
 }
 
@@ -619,7 +644,7 @@ footer h3{
     margin-top: 15px;
 }
 
-footer .logo-footer{
+footer .logo-footer a{
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         letter-spacing: 1px;
@@ -825,12 +850,16 @@ footer .footer-abajo{
     }
 
     .terapias .content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+    }
+    #adultos,#online{
+        display: flex;
+        flex-direction: column-reverse;
     }
     #adolescentes{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
 
@@ -841,6 +870,10 @@ footer .footer-abajo{
     .terapias .content .contentBx p{
         text-align: left;
     }
+
+    .terapias .content .imgPhoto {
+    margin-bottom: -45px;
+}
 
     .testimonial .description {
         padding: 0;

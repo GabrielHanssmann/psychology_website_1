@@ -150,6 +150,9 @@
                         Mas info</a>
                 </div>
             </div>
+        
+               
+           
         </div>
 
 
@@ -189,6 +192,7 @@
                     
                 </div>
                 <div class="w50">
+                    <a href="adultos.html">
                     <picture>
                         <source
                           srcset="./img/presencial-mobile.jpg"
@@ -207,11 +211,13 @@
                         />
                         <img class="imgPhoto" src="img/presencial.jpg" alt="terapia adultos">
                       </picture>
+                    </a>
                 </div>              
             </div>
 
             <div class="content adol" id="adolescentes">
                 <div class="w50">
+                    <a href="adolescentes.html">
                     <picture>
                         <source
                           srcset="./img/adolescentes-mobile.jpg"
@@ -230,6 +236,7 @@
                         />
                         <img class="imgPhoto" src="img/adolescentes.jpg" alt="terapia adolecentes">
                       </picture>
+                      </a>
                 </div> 
                 <div class="contentBx w50">
                     <h3>Terapia Adolescentes</h3>
@@ -248,6 +255,7 @@
 
                 </div>
                 <div class="w50">
+                    <a href="online.html">
                     <picture>
                         <source
                           srcset="./img/online-mobile.jpg"
@@ -266,6 +274,7 @@
                         />
                         <img class="imgPhoto" src="img/online.jpg" alt="terapia online">
                       </picture>
+                      </a>
                 </div>              
             </div>
         </section>
@@ -413,15 +422,16 @@
                 <div class="info-contacto">
                     <div class="box-contact">
                         <div class="icono-contact">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <a href="tel:+59892790919"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
                         </div> 
                         <div class="texto-contact"> 
-                            <h3>Whatsapp</h3> <p>+598 92 790 919</p>
+                            <h3>Whatsapp</h3> <a href=""></a><p>+598 92 790 919</p>
                         </div> 
                     </div> 
                     <div class="box-contact"> 
                         <div class="icono-contact">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:info@geistpsicologia.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         </div>
                     <div class="texto-contact">
                         <h3>Mail</h3>
@@ -475,7 +485,7 @@
         <footer>
             <div class="footer-izq">
                 <!--PONER IMAGEN LOGO-->
-                <div class="logo-footer">Geist</div>
+                <div class="logo-footer"><a href="https://geistpsicologia.com/">Geist</a></div>
                 <p>Si estás buscando ayuda psicológica en Uruguay, te damos la bienvenida a Geist Psicología.
                     Un centro de psicología con años de experiencia y en constante formación e investigación.
                     Especializados en tratar la salud emocional de las personas y mejorar su calidad de vida.</p>
@@ -500,8 +510,8 @@
                 <li>
                     <h3>Contacto</h3>
                     <ul class="caja-enlace">
-                        <li><b>Whatsapp:</b> +598 92 790 919</li>
-                        <li><b>Mail:</b> info@geistpsicologia.com</li>
+                        <li><b>Whatsapp:</b> <a href="tel:+59892790919">+598 92 790 919</a></li>
+                        <li><b>Mail:</b> <a href="mailto:info@geistpsicologia.com">info@geistpsicologia.com</a> </li>
                         <li><b>Horario:</b> Lun a Vie 09:00 a 20:00</li>
                     </ul>
                 </li>
@@ -517,6 +527,17 @@
     
 
     <script>
+        // SLIDER
+        var contador = 1;
+setInterval(function(){
+    document.getElementById('radio' + contador).checked = true;
+    contador++;
+    if(contador > 4){
+        contador = 1;
+    }
+}, 9000);
+
+        //TESTIMONIAL
         $(document).ready(function(){
     $("#testimonial-slider").owlCarousel({
         items:1,
