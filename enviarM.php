@@ -9,7 +9,7 @@ $mensaje = $_POST['mensaje'];
 
 // Datos para el correo
 $destinatario = "info@geistpsicologia.com";
-$asunto = "Contacto desde la web Montevideo";
+$asunto = "Contacto desde la web Maldonado";
 
 $carta = "Nombre: $nombre \n";
 $carta .= "Apellido: $apellido \n";

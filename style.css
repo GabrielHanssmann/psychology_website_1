@@ -354,12 +354,15 @@ header ul li .activa{
 }
 
 .terapias .content .imgPhoto:hover{
-    padding: 15px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .metodo{
         background: var(--fondo-seccion);
+}
+
+.metodo.inicio{
+    background: white;
 }
 
 .metodo .content{
